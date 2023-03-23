@@ -182,7 +182,7 @@ systemctl start auto-cpufreq
 sudo vim /etc/default/grub
 ```
 Изменить строку на:
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash iommu=soft"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash amd_iommu=off"
 ``` bash 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
